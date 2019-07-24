@@ -6,7 +6,7 @@ export default class ControlledForm extends React.Component {
     this.state = this.calculateState(props.fields)
   }
 
-  calculateState(fields) {
+  calculateState = fields => {
     const keys = Object.keys(fields)
     let validCount = 0
 
